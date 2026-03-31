@@ -1,0 +1,272 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #25282b;
+}
+
+.card {
+  width: 90%;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+  text-align: center;
+}
+
+header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+
+}
+
+section {
+  text-align: center;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 5%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header, footer {
+  text-align: center;
+  background-color: #25282b;
+
+  color: white;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Transition de disparition (fade-out) */
+.fade-out {
+  animation: fadeOut 0.8s ease forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0; transform: scale(0.95); }
+}
+
+/* Portfolio apparaît en fondu */
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.passions {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fffaf0;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.passion {
+  text-align: center;
+  background-color: #ffffff;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 1rem 0;
+  border-left: 5px solid #87cefa;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  width: 60%;
+  margin: 10px auto; /* réduit l’espace autour */
+}
+
+.passion h3 {
+  margin-bottom: 5px;
+  color: #4169e1;
+}
+
+.skills {
+  text-align: center;
+  background-color: #f9f9ff;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.skill {
+  text-align: center;
+  background-color: #ffffff;
+  border-left: 5px solid #ffb347;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  width: 60%;
+  margin: 10px auto; /* réduit l’espace autour */
+}
+
+
+.recommendations {
+  text-align: center;
+  background-color: #f3e5f7;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.recommendation {
+  text-align: center;
+  background-color: #ffffff;
+  border-left: 5px solid #ffb347;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  width: 60%;
+  margin: 10px auto; /* réduit l’espace autour */
+}
+
+.Projets_importants {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.Projet_important {
+  text-align: center;
+  background-color: #ffffff;
+  border-left: 5px solid #ffb347;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  width: 60%;
+  margin: 10px auto; /* réduit l’espace autour */
+}
+
+
+.skill h3 {
+  color: #ff8c00;
+  margin-bottom: 0.5rem;
+}
+
+.icone {
+  font-size: 10px; /* réduit ou agrandit l’icône */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+-------
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px 40px; /* moins haut, plus large */
+  border-radius: 20px;
+
+  max-width: 800px; /* largeur parfaite */
+  width: 90%;
+
+  text-align: center;
+  margin:  0 auto;
+}
+
+/* titre */
+.about-box h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* texte */
+.about-box p {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.info-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#toggle-btn {
+    padding: 8px 15px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#toggle-btn:hover {
+    background-color: #357ABD;
+}
+
+#info-bubble {
+    margin: 10px auto;
+    width: 250px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+}
+
+#info-bubble.visible {
+    max-height: 300px;
+    opacity: 1;
+}
+
+.hidden2 {
+    display: block;
+}
